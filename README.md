@@ -1,2 +1,2 @@
 # Keep-Tasks
-A simple application to store list of pending tasks
+A simple Django application to store list of pending tasks
