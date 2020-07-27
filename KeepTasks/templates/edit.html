@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+<form method="POST">
+{% csrf_token %}
+  {{ task.as_p }}
+  <input type="submit" value="Update" />
+</form>
+<br>
+<a href="/tasks">Go Back</a>
+
+</body>
+</html>

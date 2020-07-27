@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+  <a href="/tasks"><< Go Back</a>
+  <br>
+  <h1>{{task.title}}</h1>
+  <p>{{task.desc}}</p>
+  <br>
+  Created on {{task.date}}
+  <br>
+  <form action="/tasks/update/{{task.id}}/">
+      {% csrf_token %}
+      <button value="update" type="submit">Edit</button>
+  </form>
+  <form action="/tasks/del/{{task.id}}/" method="POST" >
+      {% csrf_token %}
+      <button value="remove" type="submit">Delete</button>
+  </form>
+</body>
+</html>

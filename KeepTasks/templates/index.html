@@ -1,0 +1,8 @@
+{% include 'header.html' %}
+    <ul>
+      {% for task in tasks %}
+        <li><a href="/tasks/details/{{task.id}}">{{task.title}}</a>: {{task.desc}}</li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
